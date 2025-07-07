@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Optional
 
 
+
 class TonStorageDaemon:
     def __init__(self, daemon_path: str):
         self.daemon_path = Path(daemon_path).expanduser()

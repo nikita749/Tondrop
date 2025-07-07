@@ -20,6 +20,7 @@ class TonStorageCLI:
         for line in pipe:
             print(f"{prefix}{line.strip()}", flush=True)
 
+
     def upload(self, file_path: str) -> str:
         file_path = Path(file_path).absolute()
         if not file_path.exists():
