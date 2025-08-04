@@ -1,0 +1,23 @@
+:root {
+  --tondrop-text: rgba(226, 226, 226, 1);
+  --tondrop-background: rgba(247, 249, 251, 1);
+  --tondrop-accent: rgba(0, 163, 255, 1);
+  --tondrop-font-font-family: "Poppins", Helvetica;
+  --tondrop-font-font-weight: 500;
+  --tondrop-font-font-size: 18px;
+  --tondrop-font-letter-spacing: 0px;
+  --tondrop-font-line-height: normal;
+  --tondrop-font-font-style: normal;
+  --tondrop-heads-font-family: "Poppins", Helvetica;
+  --tondrop-heads-font-weight: 600;
+  --tondrop-heads-font-size: 20px;
+  --tondrop-heads-letter-spacing: 0px;
+  --tondrop-heads-line-height: normal;
+  --tondrop-heads-font-style: normal;
+  --tondrop-min-font-family: "Poppins", Helvetica;
+  --tondrop-min-font-weight: 300;
+  --tondrop-min-font-size: 12px;
+  --tondrop-min-letter-spacing: 0px;
+  --tondrop-min-line-height: normal;
+  --tondrop-min-font-style: normal;
+}
