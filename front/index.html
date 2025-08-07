@@ -1,291 +1,194 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="styleguide.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="home">
-      <div class="div">
-            <div class="menu">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TonDrop - Decentralized Cloud Storage</title>
+    <link rel="stylesheet" href="style.css"/>
 
-                <div class="settings-log-out">
-                    <div class="settings-text">Settings</div>
-                    <div class="logout-text">Log Out</div>
-                </div>
+    <!-- add Poppins from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
 
-                <div class="my-cloud"><div class="home-text">Home</div></div>
-                <div class="shared-files"><div class="shared-files-text">Shared Files</div></div>
-                <div class="favorites"><div class="favorites-text">Favorites</div></div>
-
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Menu -->
+        <nav class="sidebar-menu">
+            <div class="menu-item active">Home</div>
+            <div class="menu-item">Shared Files</div>
+            <div class="menu-item">Favorites</div>
+            
+            <div class="menu-settings">
+                <div class="menu-item">Settings</div>
+                <div class="menu-item">Log Out</div>
             </div>
-
-
-            <div class="users-files">
-                <div class="overlap">
-
-                    <!-- <div class="categories"> -->
-                        <!-- <div class="rectangle"></div>
-                        <div class="rectangle-2"></div>
-                        <div class="rectangle-3"></div>
-                        <div class="rectangle-4"></div> -->
-                        
-                    <!-- </div> -->
-
-                    <div class="categories-text">Categories</div>
-
-                    <div class="liquid-glass-medium">
-                        <div class="overlap-group">
-                            <div class="fill"></div>
-                            <!-- <img class="glass-effect" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect-1.svg" /> -->
-                        </div>
+        </nav>
+        
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search">
+            </div>
+            
+            <!-- Categories -->
+            <div class="scroll-container">
+                <h2 class="section-title">Categories</h2>
+                <div class="categories-grid">
+                    <div class="category-card purple">
+                        <div class="file-format">Pictures</div>
+                        <div class="number-files">480 files</div>
                     </div>
-
-                    <div class="number-files-text">30 files</div>
-                    <div class="file-format-text">Videos</div>
-
-                    <div class="overlap-wrapper">
-                        <div class="overlap-2">
-                            <div class="fill"></div>
-                            <!-- <img class="glass-effect" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect-12.svg" /> -->
-                        </div>
+                    
+                    <div class="category-card teal">
+                        <div class="file-format">Documents</div>
+                        <div class="number-files">190 files</div>
                     </div>
-
-                    <div class="number-files-text-1">190 files</div>
-                    <div class="file-format-text-1">Documents</div>
-
-                    <div class="overlap-group-wrapper">
-                        <div class="overlap-3">
-                            <div class="fill-2"></div>
-                            <!-- <img class="img" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect-1.svg" /> -->
-                        </div>
+                    
+                    <div class="category-card pink">
+                        <div class="file-format">Videos</div>
+                        <div class="number-files">30 files</div>
                     </div>
-
-                    <div class="file-format-text-2">Pictures</div>
-                    <div class="number-files-text-2">480 files</div>
-
-                    <div class="div-wrapper">
-                        <div class="overlap-4">
-                            <div class="fill-3"></div>
-                            <!-- <img class="glass-effect-2" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect-1.svg" /> -->
-                        </div>
+                    
+                    <div class="category-card blue">
+                        <div class="file-format">Audio</div>
+                        <div class="number-files">80 files</div>
                     </div>
-
-                    <div class="number-files-text-3">80 files</div>
-                    <div class="file-format-text-3">Audio</div>
                 </div>
-                <div class="files">
-
-                    <div class="overlap-5">
-                        <div class="group"><div class="rectangle-5"></div></div>
-                        <div class="file-format-text-4">Work</div>
-                        <div class="number-files-text-4">820 files</div>
+            <!-- </div> -->
+            
+            <!-- Folders -->
+            <!-- <div class="scroll-container"> -->
+                <h2 class="section-title">Folders</h2>
+                <div class="folders-grid">
+                    <div class="folder-card">
+                        <div class="file-format">Work</div>
+                        <div class="number-files">820 files</div>
                     </div>
-
-                    <div class="overlap-group-2">
-                        <div class="group"><div class="rectangle-5"></div></div>
-                        <div class="number-files-text-5">115 files</div>
-                        <div class="file-format-text-5">Personal</div>
+                    
+                    <div class="folder-card">
+                        <div class="file-format">Personal</div>
+                        <div class="number-files">115 files</div>
                     </div>
-
-                    <div class="overlap-6">
-                        <div class="group"><div class="rectangle-5"></div></div>
-                        <div class="number-files-text-6">65 files</div>
-                        <div class="file-format-text-6">School</div>
+                    
+                    <div class="folder-card">
+                        <div class="file-format">School</div>
+                        <div class="number-files">65 files</div>
                     </div>
-
-                    <div class="overlap-7">
-                        <div class="group"><div class="rectangle-5"></div></div>
-                        <div class="number-files-text-7">31 files</div>
-                        <div class="file-format-text-7">Archive</div>
+                    
+                    <div class="folder-card">
+                        <div class="file-format">Archive</div>
+                        <div class="number-files">31 files</div>
                     </div>
-
-                    <img class="group-2" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/group-5.png" />
-                    <div class="folders-text">Folders</div>
-
                 </div>
-                <div class="overlap-8">
-
-                    <div class="recent-files">
-
-                        <div class="overlap-9">
-                            <!-- <img class="image" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-17.png" /> -->
-                            <div class="rectangle-6"></div>
-                            <div class="text-wrapper-23">IMG_0001</div>
-                            <div class="text-wrapper-24">PNG file</div>
-                            <div class="text-wrapper-25">5 MB</div>
-                        </div>
-
-                        <div class="overlap-10">
-                            <img class="image-2" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-18.png" />
-                            <div class="rectangle-7"></div>
-                            <div class="text-wrapper-26">AVI file</div>
-                            <div class="text-wrapper-27">105 MB</div>
-                            <div class="text-wrapper-28">Startup pitch</div>
-                        </div>
-
-                        <div class="overlap-11">
-                            <img class="image-3" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-19.png" />
-                            <div class="rectangle-8"></div>
-                            <div class="text-wrapper-29">MP3 file</div>
-                            <div class="text-wrapper-30">550 MB</div>
-                            <div class="text-wrapper-31">Elon Musk Podcast</div>
-                        </div>
-
-                        <div class="overlap-12">
-                            <img class="image-4" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-20.png" />
-                            <div class="rectangle-9"></div>
-                            <div class="text-wrapper-32">PDF file</div>
-                            <div class="text-wrapper-33">10 MB</div>
-                            <div class="text-wrapper-34">Resume</div>
-                        </div>
-
-                        <img class="image-5" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-24.png" />
-                        <img class="image-6" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-24.png" />
-                        <img class="image-7" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-24.png" />
-                        <img class="image-8" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/image-24.png" />
-
-                        <div class="text-wrapper-35">Recent Files</div>
-
+            <!-- </div> -->
+            
+            <!-- Recent Files -->
+            <!-- <div class="scroll-container"> -->
+                <h2 class="section-title">Recent Files</h2>
+                <div class="recent-files-container">
+                    <div class="recent-file">
+                        <div class="file-icon" style="background-color: var(--accent-purple);">IMG</div>
+                        <div class="file-name">IMG_0001</div>
+                        <div class="file-type">PNG file</div>
+                        <div class="file-size">5 MB</div>
                     </div>
-
-                    <div class="liquid-glass-small">
-                        <div class="overlap-13">
-                            <div class="fill-4"></div>
-                            <!-- <img class="glass-effect-3" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect.svg" /> -->
-                        </div>
+                    
+                    <div class="recent-file">
+                        <div class="file-icon" style="background-color: var(--accent-pink);">VID</div>
+                        <div class="file-name">Startup pitch</div>
+                        <div class="file-type">AVI file</div>
+                        <div class="file-size">105 MB</div>
                     </div>
-
-                    <div class="liquid-glass-small-2">
-                        <div class="overlap-14">
-                            <div class="fill-4"></div>
-                            <!-- <img class="glass-effect-3" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect.svg" /> -->
-                        </div>
+                    
+                    <div class="recent-file">
+                        <div class="file-icon" style="background-color: var(--accent-dark-blue);">AUD</div>
+                        <div class="file-name">Elon Musk Podcast</div>
+                        <div class="file-type">MP3 file</div>
+                        <div class="file-size">550 MB</div>
                     </div>
-
-                    <div class="liquid-glass-small-3">
-                        <div class="overlap-15">
-                            <div class="fill-4"></div>
-                            <!-- <img class="glass-effect-3" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect.svg" /> -->
-                        </div>
+                    
+                    <div class="recent-file">
+                        <div class="file-icon" style="background-color: var(--accent-teal);">DOC</div>
+                        <div class="file-name">Resume</div>
+                        <div class="file-type">PDF file</div>
+                        <div class="file-size">10 MB</div>
                     </div>
-
-                    <div class="liquid-glass-small-4">
-                        <div class="overlap-16">
-                            <div class="fill-4"></div>
-                            <!-- <img class="glass-effect-3" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect.svg" /> -->
-                        </div>
-                    </div>
-
                 </div>
             </div>
+        </main>
+        
+        <!-- Side Panel -->
+        <aside class="side-panel">
 
-            <div class="text-field">
-                <div class="contents">
-                    <!-- <div class="separator"></div> -->
-                    <input class="search" placeholder="Search" type="text" />
-                </div>
+            <div class="file-circle">
+                <!-- <img src="./CIRCLE.svg"> -->
+                <p class="dragDropTitle" style="margin-top: 20px;">Drag & drop your files here</p>
             </div>
+            
 
-            <div class="provider-info">
-                <div class="overlap-17">
 
-                    <div class="liquid-glass-medium-2">
-                        <div class="overlap-group-3">
-                            <div class="fill-5"></div>
-                            <!-- <img class="glass-effect-4" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect-1.svg" /> -->
-                        </div>
+            <div class="storage-section">
+                <h2 class="section-title">Storage Status</h2>
+                <div class="progress-container">
+                    <p>75 GB are used out of 100 GB</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
                     </div>
-
-                    <div class="storage-info-text">Storage Info</div>
-                    <div class="storage-provider-text">Storage provider:</div>
-                    <div class="max-contract-text">Max contract:</div>
-                    <div class="max-total-size-text">Max total size:</div>
-                    <div class="max-file-size-text">Max file size:</div>
-                    <div class="rate-text">rate:</div>
-
                 </div>
+                <div style="text-align: right; color: var(--accent-teal); font-weight: 600;">25% left</div>
             </div>
-
-            <div class="overlap-18">
-
-                <div class="side-panel">
-
-                    <div class="side-panel-inner-div">
-
-                        <div class="crost-div">
-
-                            <div class="crost-line-holder-vert">
-
-                                <div class="crost-line-vert"></div>
-
-                            </div>
-
-                            <div class="crost-line-holder-hor">
-
-                                <div class="crost-line-hor"></div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="overlap-23">
-
-                            <div class="liquid-glass-medium-5">
-
-                                <div class="overlap-group-4">
-                                    <div class="fill-7"></div>
-                                    <!-- <img class="glass-effect-7" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect-1.svg" /> -->
-                                </div>
-
-                            </div>
-
-                            <p class="p">75 GB are used out of 100 GB</p>
-                            <div class="text-wrapper-42">25% left</div>
-                            <div class="text-wrapper-43">Storage status</div>
-                            <img
-                            class="circular"
-                            src="https://c.animaapp.com/mdx4ed6wR0trUg/img/circular-indeterminate-progress-indicator.svg"/>
-                        </div>
-
-                        <div class="overlap-24">
-
-                            <div class="liquid-glass-medium-6">
-                                <div class="overlap-25">
-                                    <div class="fill-8"></div>
-
-                                    
-                                    <!-- <img class="glass-effect-8" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/glass-effect-1.svg" /> -->
-                                </div>
-                            </div>
-                            
-                            <div class="progress-bar">
-                                <div class="track"><div class="filled"></div></div>
-                            </div>
-
-                            <div class="text-wrapper-44">30% left</div>
-                            <div class="text-wrapper-45">TON Balance</div>
-                            <p class="text-wrapper-46">7 TON are used out of 10 TON</p>
-
-                        </div>
-
-                        <p class="drag-drop-your-files">Drag &amp; drop your files here</p>
-
+            
+            <div class="balance-section">
+                <h2 class="section-title">TON Balance</h2>
+                <p>7 TON are used out of 10 TON</p>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
                     </div>
-
                 </div>
-                
-                <img class="ton-symbol" src="https://c.animaapp.com/mdx4ed6wR0trUg/img/ton-symbol-1.svg" />
-                <button class="topup-btn" title="top-up-text">Top up TON</button>
-                     <!-- <div class="top-up-text">Top up</div> -->
+                <div style="text-align: right; color: var(--accent-teal); font-weight: 600;">30% left</div>
+            </div>
+            
+            <div style="text-align: center; margin-top: auto;">
+                <button class="topup-button">
+                    <img src="https://c.animaapp.com/mdx4ed6wR0trUg/img/ton-symbol-1.svg" alt="TON" width="20">
+                    Top up TON
                 </button>
-               
 
             </div>
-      </div>
+
+                <!-- Info Panel -->
+            <div class="info-panel">
+                <h2 class="section-title">Storage Info</h2>
+                <div class="info-item">
+                    <p>Storage provider:</p>
+                    <p><strong>TonDrop</strong></p>
+                </div>
+                <div class="info-item">
+                    <p>Max contract:</p>
+                    <p><strong>1 TB</strong></p>
+                </div>
+                <div class="info-item">
+                    <p>Max total size:</p>
+                    <p><strong>5 TB</strong></p>
+                </div>
+                <div class="info-item">
+                    <p>Max file size:</p>
+                    <p><strong>2 GB</strong></p>
+                </div>
+                <div class="info-item">
+                    <p>Rate:</p>
+                    <p><strong>0.05 TON/GB/month</strong></p>
+                </div>
+            </div>
+
+            
+        </aside>
+        
+        
     </div>
-  </body>
-</html>
+</body></html>
