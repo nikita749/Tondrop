@@ -216,6 +216,16 @@ class TonStorageAPI:
         if json_output:
             cmd += " --json"
         return self.send_command(cmd)
+    
+    def get_provider_info(self, balances: bool = False, contracts: bool = False) -> str:
+        cmd = f"get-provider-info"
+        if balances:
+            cmd += " --balances"
+        elif contracts:
+            cmd += " --contracts"
+        elif balances and contracts:
+            cmd += " --contracts --balances"
+        return self.send_command(cmd)
 
     def help(self):
         return self.send_command("help")
@@ -259,7 +269,7 @@ class TonStorageAPI:
 
 
 if __name__ == "__main__":
-    storage_cli_startup = '/Users/gtsk/ton/build/storage/storage-daemon/storage-daemon-cli -I 127.0.0.1:5555 -k /Users/gtsk/ton/build/storage/storage-daemon/ton-storage-db/cli-keys/client -p /Users/gtsk/ton/build/storage/storage-daemon/ton-storage-db/cli-keys/server.pub'
+    storage_cli_startup = '/home/strk/Downloads/ton/build/storage/storage-daemon/storage-daemon-cli -I 127.0.0.1:5555 -k /media/strk/LaCie/storage-db/storage/tondrop-storage/cli-keys/client -p /media/strk/LaCie/storage-db/storage/tondrop-storage/cli-keys/server.pub'
 
     api = TonStorageAPI(storage_cli_startup)
     if api.start_cli_session():

@@ -32,12 +32,12 @@ async def root(request: Request):
 
 @app.get("/test")
 async def test_help_func():
-    storage_cli_startup = '/Users/gtsk/ton/build/storage/storage-daemon/storage-daemon-cli -I 127.0.0.1:5555 -k /Users/gtsk/ton/build/storage/storage-daemon/ton-storage-db/cli-keys/client -p /Users/gtsk/ton/build/storage/storage-daemon/ton-storage-db/cli-keys/server.pub'
+    storage_cli_startup = '/home/strk/Downloads/ton/build/storage/storage-daemon/storage-daemon-cli -I 127.0.0.1:5555 -k /media/strk/LaCie/storage-db/storage/tondrop-storage/cli-keys/client -p /media/strk/LaCie/storage-db/storage/tondrop-storage/cli-keys/server.pub'
 
     api = TonStorageAPI(storage_cli_startup)
 
     if api.start_cli_session():
-        result = str(api.list_bags())
+        result = str(api.get_provider_info())
         api.stop()
         return {"api result": result}
 
