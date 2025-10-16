@@ -23,6 +23,7 @@ app.mount(
 )
 templates = Jinja2Templates(directory="static")
 
+
 @app.get("/")
 async def root(request: Request):
     return templates.TemplateResponse(
