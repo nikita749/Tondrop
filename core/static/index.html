@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="script" href="/Users/gtsk/PycharmProjects/tondrop/front/scripts/index.js">
+    <script src="{{ url_for('static', path='/scripts/index.js') }}"></script>
     
 
 </head>
@@ -153,7 +153,7 @@
             <div class="storage-section">
                 <h2 class="section-title">Storage Status</h2>
                 <div class="progress-container">
-                    <p>0 GB are used out of 0 GB</p>
+                    <p id="storage-status">0 GB are used out of 0 GB</p>
                     <div class="progress-bar">
                         <div class="progress-fill" style="width: 75%"></div>
                     </div>
@@ -185,7 +185,7 @@
                 <h2 class="section-title">Storage Info</h2>
                 <div class="info-item">
                     <p>Storage provider:</p>
-                    <p><strong>TonDrop</strong></p>
+                    <p id="storage-provider"><strong>TonDrop</strong></p>
                 </div>
                 <div class="info-item">
                     <p>Max contract:</p>
@@ -211,7 +211,7 @@
         
     </div>
 
-    <script>
+    <!-- <script>
         document.querySelectorAll('.category-card').forEach(btn => {
             btn.addEventListener('click', function(e) {
                 const ripple = document.createElement('span');
@@ -247,7 +247,7 @@
             setTimeout(() => ripple.remove(), 600);
 
         })
-    </script>
+    </script> -->
 </body>
 
 </html>
