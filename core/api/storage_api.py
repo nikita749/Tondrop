@@ -270,4 +270,3 @@ if __name__ == "__main__":
         time.sleep(2)
         print(api.deploy_provider())
         api.stop()
-
