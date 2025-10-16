@@ -269,6 +269,5 @@ if __name__ == "__main__":
         print(api.help())
         time.sleep(2)
         print(api.deploy_provider())
-
         api.stop()
 
