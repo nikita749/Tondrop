@@ -262,7 +262,6 @@ if __name__ == "__main__":
     storage_cli_startup = '/Users/gtsk/ton/build/storage/storage-daemon/storage-daemon-cli -I 127.0.0.1:5555 -k /Users/gtsk/ton/build/storage/storage-daemon/ton-storage-db/cli-keys/client -p /Users/gtsk/ton/build/storage/storage-daemon/ton-storage-db/cli-keys/server.pub'
 
     api = TonStorageAPI(storage_cli_startup)
-
     if api.start_cli_session():
         print(api.help())
         time.sleep(3)
