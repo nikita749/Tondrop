@@ -35,6 +35,7 @@ async def test_help_func():
 
     api = TonStorageAPI(storage_cli_startup)
 
+
     if api.start_cli_session():
         result = str(api.list_bags())
         api.stop()
